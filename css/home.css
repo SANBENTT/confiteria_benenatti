@@ -1,0 +1,194 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box ;
+}
+a{
+  text-decoration: none;
+}
+  body{
+    margin: 10px;
+    }
+
+.letras{
+    border-style:double;
+    background-image:linear-gradient(to left, rgb(30, 93, 30), aquamarine);
+    padding: 1px;
+    list-style: none;
+}
+.letras a{
+  color: black;
+}
+.contenido{
+   padding: 10px;
+   display: block;
+    border-style:double;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    text-align: center;
+    word-spacing: 2px;
+    background-image:linear-gradient(to left, rgb(30, 93, 30), aquamarine);
+}
+.cuerpo{
+border-style:dashed;
+font-weight: bold;
+font-family:'Courier New', Courier, monospace;
+padding:50px; 
+background-image:url(https://previews.123rf.com/images/imagesbavaria/imagesbavaria1405/imagesbavaria140500060/28102035-superficie-de-vac%C3%ADo-fondo-de-madera-de-color-turquesa.jpg);
+}
+.mapa{
+  max-width: 100%;
+  height: auto;
+}
+.imagen{
+  display: flex;
+  flex-direction:row;
+    border-style:dashed;
+    max-width: 100%;
+    height: 130px;
+}
+.homepal{
+  padding: 20px;
+}
+
+.letras1{
+    border-style:double;
+    background-image:linear-gradient(to left, rgb(30, 93, 30), aquamarine);
+    padding: 1mm;
+    text-align: center;
+}
+.imagenes{
+    border-style:dotted;
+    margin-block-start: 5mm;
+    margin-block-end: 5mm;
+
+}
+.redes{
+    text-align: center;
+    margin-block-start: 10mm;
+margin-block-end: 10mm;
+}
+.grid{
+  display: grid;
+  justify-items:center;
+}
+.logo{
+   text-decoration: none;
+   font-size: 1.8em;
+   color: rgb(14, 55, 5);
+   display: inline-block;
+   vertical-align: middle;
+   cursor: pointer;
+   margin-right: 5px;
+   background-color: greenyellow;
+    
+}
+.mainhead
+    {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 10px 30px;
+   z-index: 2;
+   font-size: 1.2rem;
+        
+    
+}
+.navegacion{
+   display:flex;
+   justify-content: normal;
+   flex-direction:row;
+   flex-wrap: wrap;
+   align-content: space-between;
+   align-items: center;
+   list-style-type:none;
+   margin-left: 18px;
+   margin-block-start:20px;
+   margin-block-end: 25px;
+   padding-inline-start: 20px;
+}
+
+.navegacion-tab{
+    display: block;
+    margin-left: 20px;
+}
+.navegacion-tab a{
+  color: black;
+
+}
+@media screen and (max-width: 768px) {
+
+  .cuerpo{
+    border-style:none;
+    padding: none; 
+  }
+  .pri{
+    text-align: center;
+      }
+
+  .seg{
+    text-align: center;}
+    
+  .mainhead{
+    flex-direction: column;
+    padding: 10px;
+      }
+  
+  .navegacion{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .navegacion-tab{
+    display:flex;
+    margin-left:0px;
+}
+.articulos{
+  flex-direction: column;
+}
+}
+    
+
+
+
+
+
+.cuerpo-sit{
+     text-align: center;
+    
+}
+.footer{
+    position: relative;
+    display: flex;
+    align-items:center;
+    font-size: 1.1rem;
+    text-align: end;
+}
+.grid {
+  width:auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+    }
+ .a {  grid-row: 1 / 2; }
+ .b {grid-row: 2 / 3;}
+ .d { grid-row: 3 / 4;}
+     
+ .imagen-princ{
+  max-width: 100%;
+  height: auto;
+ }
+
+ .articulos{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+ }
+ .articulos .pri{
+  list-style: none;
+ }
+
