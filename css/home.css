@@ -191,6 +191,8 @@ margin-block-end: 10mm;
  }
  .articulos .pri{
   list-style: none;
-  
- }
+  }
+  .ejemplo{
+    transform: rotateX(200deg);
+  }
 
