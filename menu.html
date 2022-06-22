@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">    
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="./css/home.css"/>
 	</head>
-<body class="cuerpo grid">
 	<!-- fila de logo + nav --> 
-	<header class="mainhead letras a">
-		<h3 class="logo">LOGO</h3>
-		<nav>
-			<ul class="navegacion">
-				<li class="navegacion-tab"><a href="index.html">Home</a></li>
-				<li class="navegacion-tab"><a href="gallery.html">Galeria</a></li>
-				<li class="navegacion-tab"><a href="contact.html">Contacto</a></li>
-				<li class="navegacion-tab"><a href="menu.html">Menu</a></li>
-				<li class="navegacion-tab"><a href="maps.html">Maps</a></li>
-				<li class="navegacion-tab"><a href="comment.html">Comment</a></li>
+<body class="cuerpo grid">
+	<header>
+	<nav class="navbar navbar-expand-lg bg-light mainhead letras a">
+		<div class="container-fluid">
+		  <a class="logo" href="#">logo</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Galeria</a></li>
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menu</a></li>
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="maps.html">Maps</a></li>
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="comment.html">Comment</a></li>
 			</ul>
-		</nav>
+		
+	  	</div>
+	  	</div>
+	  	</nav>
 	</header>
-	<!-- cierre fila de logo + nav --> 
+	<!-- cierre fila de logo + nav -->
 	<!-- Cuerpo de mi sitio -->
-    <section  class="contenido menu b">
+    <section  class=" mapa">
         <h3>Menu</h3>
-		<div class="articulos">
+		<div class="articulos row">
 		<div class="articulo">
-		<img class="imagen" src="img\cafe.jpg" width="200" height="100">
+			<div class="col-lg-3">
+			<img class="container" src="img\cafe.jpg" >
+		</div>
         	<ul class="pri">
 			<li>articulo 1</li>
 	    	<li>articulo 2</li>
@@ -35,7 +49,9 @@
 			</ul>
 		</div>
 		<div class="articulo">
-			<img class="imagen" src="img\media-luna.jpg" width="200" height="100">
+			<div class="col-lg-3">
+				<img class="container" src="img\media-luna.jpg" >
+			</div>
 			<ul class="pri">
 			<li>articulo 5</li>
 			<li>articulo 6</li>
@@ -44,7 +60,10 @@
 			</ul>
 		</div>
 		<div class="articulo">
-			<img class="imagen" src="img\chocotorta.jpg" width="200" height="100">
+			<div class="articulo">
+				<div class="col-lg-3">
+					<img class="container" src="img\chocotorta.jpg" >
+				</div>
 			<ul class="pri">
 			<li>articulo 9</li>
 			<li>articulo 10</li>
@@ -55,12 +74,30 @@
 	</div>
 	</section>
     <!-- Cierre cuerpo de mi sitio -->
-	<!-- Footer de mi sitio -->
-	<footer class="footer d">
-		<h3 class="logo" >LOGO</h3>
-		<li class="letras"><a href="contact.html">Contacto</a></li>
-		<li class="letras"><a href="comment.html">Comment</a></li>
-	</footer>  
-	<!-- cierre Footer de mi sitio -->
+		<!-- Footer de mi sitio -->
+		<footer>
+			<div class="container">
+				<nav class="row">
+			<ul class=" list-unystyled">
+				<li class="d-flex justify-content-between" >
+					<h3 class="logo" >LOGO</h3>
+				<a href="https://twitter.com" class="text-reset">
+					<img src="img\twitter-logo-4.png" height="50px" alt="twitter"></i>
+				</a>
+				<a href="https://www.instagram.com/" class="text-reset">
+					<img src="img\logo-ig-png-32464.png" height="50px" alt="instagram"></i>
+				</a>
+				<a href="http://www.facebook.com/" class="text-reset">
+					<img src="img\face-logo.png" height="50px" alt="facebook"></i>
+				</a>
+			</li>
+			</ul>	
+		</nav>
+	</div>
+		</footer> 
+	  
+		<!--cierre Footer de mi sitio -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

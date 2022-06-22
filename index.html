@@ -4,11 +4,37 @@
 	<meta name="viewport" content="with=device-width, initial-scale=1.0">    
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="./css/home.css"/>
 	</head>
-<body class="cuerpo grid">
 	<!-- fila de logo + nav --> 
-	<header class="mainhead letras a">
+<body class="cuerpo grid">
+	<header>
+	<nav class="navbar navbar-expand-lg bg-light mainhead letras">
+		<div class="container-fluid">
+		  <a class="logo" href="#">logo</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Galeria</a></li>
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menu</a></li>
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="maps.html">Maps</a></li>
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="comment.html">Comment</a></li>
+			</ul>
+		
+	  	</div>
+	  	</div>
+	  	</nav>
+	</header>
+	<!-- cierre fila de logo + nav -->
+	<!-- fila de logo + nav --> 
+	<!--<header class="mainhead letras a">
 		<h3 class="logo">LOGO</h3>
 		<nav>
 			<ul class="navegacion">
@@ -20,22 +46,44 @@
 				<li class="navegacion-tab"><a href="comment.html">Comment</a></li>
 			</ul>
 		</nav>
-	</header>
+	</header> --> 
 	<!-- cierre fila de logo + nav --> 
 	<!-- Cuerpo de mi sitio -->
-	<section class="cuerpo-sit b">
+	<section class="cuerpo-sit b container-fluid">
+		<div class="">
 		<h3 class="homepal">Home</h3>
 		<img class="imagen-princ ejemplo" src="img\confiterias.jpg" width="700" height="300" alt="imagen de confiteria">
 		<p class="contenido">
 			El secreto para lograr la calidad, la frescura y el sabor inigualable de los productos que elaboramos responde a un arte, que se transmite de generación en generación y se basa en la pasión por lo que hacemos.
 		</p>
+	</div>
 	</section>
 	<!-- Cierre cuerpo de mi sitio -->
 	<!-- Footer de mi sitio -->
-	<footer class="footer d">
-		<h3 class="logo" >LOGO</h3>
-		<li class="letras"><a href="contact.html">Contacto</a></li>
-		<li class="letras"><a href="comment.html">Comment</a></li>
-	</footer>   
-	<!-- cierre Footer de mi sitio -->
-</html>
+	<footer>
+		<div class="container">
+			<nav class="row">
+		<ul class=" list-unystyled">
+			<li class="d-flex justify-content-between" >
+				<h3 class="logo" >LOGO</h3>
+			<a href="https://twitter.com" class="text-reset">
+				<img src="img\twitter-logo-4.png" height="50px" alt="twitter"></i>
+			</a>
+			<a href="https://www.instagram.com/" class="text-reset">
+				<img src="img\logo-ig-png-32464.png" height="50px" alt="instagram"></i>
+			</a>
+			<a href="http://www.facebook.com/" class="text-reset">
+				<img src="img\face-logo.png" height="50px" alt="facebook"></i>
+			</a>
+		</li>
+		</ul>	
+	</nav>
+</div>
+	</footer> 
+  
+	<!--cierre Footer de mi sitio -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	</body>
+	</html>

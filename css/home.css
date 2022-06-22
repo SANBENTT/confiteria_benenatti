@@ -19,6 +19,14 @@ a{
 .letras a{
   color: black;
 }
+.mapa{
+  padding: 10px;
+  display: block;
+   margin-block-start: 10px;
+   margin-block-end: 10px;
+   text-align: center;
+   word-spacing: 2px;
+}
 .contenido{
    padding: 10px;
    display: block;
@@ -29,48 +37,35 @@ a{
     word-spacing: 2px;
     background-image:linear-gradient(to left, rgb(30, 93, 30), aquamarine);
 }
+
 .cuerpo{
 border-style:dashed;
 font-weight: bold;
 font-family:'Courier New', Courier, monospace;
 padding:50px; 
-background-image:url(https://previews.123rf.com/images/imagesbavaria/imagesbavaria1405/imagesbavaria140500060/28102035-superficie-de-vac%C3%ADo-fondo-de-madera-de-color-turquesa.jpg);
+background-image:url(https://img.freepik.com/foto-gratis/fondo-pared-ladrillo-verde-textura_53876-63580.jpg?w=2000);
+background-position: center center;
+background-size: cover;
+display: flex;
+
+align-items: center;
 }
 .mapa{
   max-width: 100%;
   height: auto;
-}
-.imagen{
-  display: flex;
-  flex-direction:row;
-    border-style:dashed;
-    max-width: 100%;
-    height: 130px;
 }
 .homepal{
   padding: 20px;
 }
 
 .letras1{
-    border-style:double;
-    background-image:linear-gradient(to left, rgb(30, 93, 30), aquamarine);
     padding: 1mm;
     text-align: center;
-}
-.imagenes{
-    border-style:dotted;
-    margin-block-start: 5mm;
-    margin-block-end: 5mm;
-
 }
 .redes{
     text-align: center;
     margin-block-start: 10mm;
 margin-block-end: 10mm;
-}
-.grid{
-  display: grid;
-  justify-items:center;
 }
 .logo{
    text-decoration: none;
@@ -161,13 +156,6 @@ margin-block-end: 10mm;
      text-align: center;
     
 }
-.footer{
-    position: relative;
-    display: flex;
-    align-items:center;
-    font-size: 1.1rem;
-    text-align: end;
-}
 .grid {
   width:auto;
   display: grid;
@@ -192,7 +180,20 @@ margin-block-end: 10mm;
  .articulos .pri{
   list-style: none;
   }
-  .ejemplo{
-    transform: rotateX(200deg);
-  }
-
+.nav-link:hover{
+  color: white;
+}
+#galeria .col-lg-4{
+margin: 0;
+  padding: 25px;
+}
+#galeria img{
+  width: 100%;
+  height: 300px;
+}
+#galeria img:hover{
+  border: 5px solid #84BE68;
+}
+footer{
+  margin-top:20px;
+}
