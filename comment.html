@@ -34,46 +34,45 @@
 	</header>
 	<!-- cierre fila de logo + nav --> 
 	<!-- Cuerpo de mi sitio -->
-	<section class="letras1 b">
-		<h3>Contact</h3>
+    <section class="letras1 b">
+    <h3>Contact</h3>
         <form>
-            <labelfor="nombre">Nombre</labelfor>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <labelfor="telefono">Telefono</labelfor>
             <br>
-            <input type="text" id="nombre">
+            <input type="number" class="form-control">
             <br>
-            <labelfor="apellido">Apellido</labelfor>
-            <br>
-            <input type="text" id="apellido">
-            <br>
-            <labelfor="telefono">Telefono</labelfor>
-            <br>
-            <input type="number" id="telefono">
-            <br>
-            <label for="mail">e-mail</label>
-            <br>
-            <input type="email" id="mail">
-            <br>
-            <label>Sucursal</label>
-            <br>
-            <select>
-                <option selected="selected">Selecciona una Sucursal</option>
-                <option>Sucursal 1</option>
-                <option>Sucursal 2</option>
-                <option>Sucursal 3</option>
-            </select>
-            <br>
-            <label> Queres recibir info sobre nuestras promociones?</label>
-            <br>
-            <span>Si</span><input type="radio" name="aceptar"><span>No</span><input type="radio" name="aceptar">
-            <br>
-            <label for="comentarios"> Deje su comentario</label>
-            <br>
-            <textarea id="comentarios" rows="8" cols="40"></textarea>
-            <br>
-            <input class="btn btn-outline-dark" type="submit" value="Submit">
-            <input class="btn btn-outline-dark" type="reset" value="Reset">
-        </form>
-    </section>
+            <labelfor="sucursal">Seleccione una sucursal</labelfor>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+        <option selected ></option>
+        <option value="1">sucursal 1</option>
+        <option value="2">sucursal 2</option>
+        <option value="3">sucursal 3</option>
+      </select>
+      <label> Queres recibir info sobre nuestras promociones?</label>
+      
+      <span>Si</span><input type="radio" name="aceptar"><span>No</span><input type="radio" name="aceptar">
+      <div class="mb-3">
+        <br>
+        <label for="exampleFormControlTextarea1" class="form-label">Deje su Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <br>
+      <input class="btn btn-outline-dark" type="submit" value="Submit">
+      <input class="btn btn-outline-dark" type="reset" value="Reset">
+    </form>
+</section>
 	<!-- Cierre cuerpo de mi sitio -->
 		<!-- Footer de mi sitio -->
         <footer>
