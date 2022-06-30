@@ -1,0 +1,43 @@
+body{
+    margin: none ;
+    }
+.cuerpo{
+    border-style:dashed;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    padding:50px; 
+    background-image:url(https://img.freepik.com/foto-gratis/fondo-pared-ladrillo-verde-textura_53876-63580.jpg?w=2000);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.grid {
+    width:auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+      }
+   .a {  grid-row: 1 / 2; }
+   .b {grid-row: 2 / 3;}
+   .d { grid-row: 3 / 4;}
+
+a{
+    text-decoration: none;
+  }
+  @media screen and (max-width: 768px) {
+
+    .cuerpo{
+      border-style:none;
+      padding: none; 
+    }
+      
+    .mainhead{
+      flex-direction: column;
+      padding: 10px;
+        }
+    .cuerpo-sit{
+            text-align: center;
+           
+       }
+    }
