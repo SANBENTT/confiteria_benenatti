@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: none;
-}
-
 .cuerpo {
   border-style: dashed;
   font-weight: bold;
@@ -16,27 +12,6 @@ body {
   background-image: url(https://img.freepik.com/foto-gratis/fondo-pared-ladrillo-verde-textura_53876-63580.jpg?w=2000);
   background-position: center center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-.grid {
-  width: auto;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-
-.a {
-  grid-row: 1/2;
-}
-
-.b {
-  grid-row: 2/3;
-}
-
-.d {
-  grid-row: 3/4;
 }
 
 a {
@@ -65,16 +40,12 @@ a {
   padding: 10px 30px;
   z-index: 2;
   font-size: 1.2rem;
-}
-
-.letras {
   border-style: double;
   background-image: linear-gradient(to left, rgb(30, 93, 30), aquamarine);
   padding: 1px;
   list-style: none;
 }
-
-.logo {
+.mainhead .logo {
   text-decoration: none;
   font-size: 1.8em;
   color: rgb(14, 55, 5);
@@ -102,13 +73,11 @@ a {
   margin: 0;
   padding: 25px;
 }
-
-#galeria img {
+#galeria .col-lg-4 img {
   width: 100%;
   height: 300px;
 }
-
-#galeria img:hover {
+#galeria .col-lg-4 img:hover {
   border: 5px solid #84BE68;
 }
 
