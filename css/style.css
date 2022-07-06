@@ -10,7 +10,7 @@
   font-family: "Courier New", Courier, monospace;
   padding: 50px;
   background-image: url(https://img.freepik.com/foto-gratis/fondo-pared-ladrillo-verde-textura_53876-63580.jpg?w=2000);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
 }
 
@@ -60,13 +60,13 @@ a {
   padding: 10px;
   display: block;
   border-style: double;
+  background-image: linear-gradient(to left, rgb(30, 93, 30), aquamarine);
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
   -webkit-margin-after: 10px;
           margin-block-end: 10px;
   text-align: center;
   word-spacing: 2px;
-  background-image: linear-gradient(to left, rgb(30, 93, 30), aquamarine);
 }
 
 #galeria .col-lg-4 {
@@ -88,6 +88,6 @@ a {
 }
 
 .letras1 {
-  padding: 1mm;
+  padding: 10px;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

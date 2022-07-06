@@ -5,3 +5,25 @@ $verdeOscuro: rgb(14, 55, 5);
 $amarillo: greenyellow;
 $blanco: white;
 $verdeClaro: #84BE68;
+@mixin bordes{
+    border-style:double;
+    background-image:map-get($estilos, color);
+}
+
+%cuerp{
+    border-style:dashed;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    padding:50px; 
+    background-image:url(https://img.freepik.com/foto-gratis/fondo-pared-ladrillo-verde-textura_53876-63580.jpg?w=2000);
+    background-position:map-get($estilos, centro);
+    background-size: cover;
+
+}
+
+$estilos:(
+    color: linear-gradient(to left, $verde,$azulm),
+    centro:center,
+    tfuente: 10px,
+)
+     

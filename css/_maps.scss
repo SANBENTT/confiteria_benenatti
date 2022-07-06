@@ -1,5 +1,6 @@
 .mapa{
-    padding: 10px;
-    text-align: center;
+    padding: map-get($estilos, tfuente);;
+    text-align: map-get($estilos, centro);
     max-width: 100%;
+    
  }

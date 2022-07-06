@@ -1,10 +1,10 @@
 .contenido{
-    padding: 10px;
+    padding: map-get($estilos, tfuente);
     display: block;
-     border-style:double;
-     margin-block-start: 10px;
-     margin-block-end: 10px;
-     text-align: center;
+    @include bordes();
+     margin-block-start: map-get($estilos, tfuente);
+     margin-block-end: map-get($estilos, tfuente);
+     text-align: map-get($estilos, centro);
      word-spacing: 2px;
-     background-image:linear-gradient(to left, rgb(30, 93, 30), aquamarine);
+     
  }

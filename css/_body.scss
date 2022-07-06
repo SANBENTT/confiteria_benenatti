@@ -1,12 +1,5 @@
 .cuerpo{
-    border-style:dashed;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    padding:50px; 
-    background-image:url(https://img.freepik.com/foto-gratis/fondo-pared-ladrillo-verde-textura_53876-63580.jpg?w=2000);
-    background-position: center center;
-    background-size: cover;
-
+ @extend %cuerp;
 }
 
 
@@ -16,16 +9,17 @@ a{
   @media screen and (max-width: 768px) {
 
     .cuerpo{
+      @extend %cuerp;
       border-style:none;
       padding: none; 
     }
       
     .mainhead{
       flex-direction: column;
-      padding: 10px;
+      padding: map-get($estilos, tfuente);
         }
     .cuerpo-sit{
-            text-align: center;
+            text-align:map-get($estilos, centro);
            
        }
     }
